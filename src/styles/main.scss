@@ -114,6 +114,11 @@ $list-margin: 25px;
 
             .project__block {
                 margin-left: $list-margin;
+                font-size: 14pt;
+
+                a {
+                    color: antiquewhite;
+                }
             }
         }
     }
