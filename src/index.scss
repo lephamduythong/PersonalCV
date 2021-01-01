@@ -1,6 +1,10 @@
-@import '/node_modules/normalize.css/normalize.css';
+@import "../node_modules/normalize.css/normalize.css";
+@import './styles/main.scss';
+@import './styles/footer.scss';
 
-* {
+*,
+*::before,
+*::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -9,4 +13,25 @@
 body {
     background-color: rgb(41, 41, 41);
     color: white;
+    width: 100vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+a, a:hover, a:visited, a:link {
+    text-decoration: none !important;
+    color: white;
+}
+
+.header {
+
+}
+
+.main {
+    @include main
+}
+
+.footer {
+    @include footer
 }

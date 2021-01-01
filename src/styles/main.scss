@@ -1,0 +1,120 @@
+$list-margin: 25px;
+
+@mixin main() {
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__side {
+        margin-top: -5px;
+
+        &--left {
+            @include left-side;
+            
+            @media (min-width: 768px) {
+                display: inline;
+                float: left;
+                width: 400px;
+                height: 95vh;
+            }   
+        }
+        
+        &--right {
+            @include right-side;
+
+            @media (min-width: 768px) {
+                display: inline;
+                float: left;
+                width: 700px;
+                height: 95vh;
+            } 
+        }       
+    }
+}
+
+@mixin left-side() {
+    background-color: rgba(220, 20, 60, 0.95);
+    font-size: 16pt;
+
+    .left-side__info {
+        margin: 5px;
+
+        &--name, &--profile-picture {
+            text-align: center;
+        }
+
+        &--name {
+            font-size: 32pt;
+        }
+
+        &--about-title, &--hobbies-title {
+            font-size: 24pt;
+        }
+
+        &--hobbies {
+            font-size: 24pt;
+
+            i {
+                margin: 10px;
+            }
+        }
+    }
+}
+
+@mixin right-side() {
+    background: linear-gradient(to right, #26a0da, #314755);
+    
+    .right-side__block {
+        > div {
+            margin: 5px;
+        }
+
+        &--timeline {
+            .timeline__title {
+                font-size: 24pt;
+            }
+
+            .timeline__info {
+                margin-left: $list-margin;
+                font-size: 14pt;
+            }
+        }
+
+        &--skills {
+            .skill__title {
+                font-size: 24pt;
+            }
+
+            .skill__block {
+                margin-left: $list-margin;
+                font-size: 14pt;
+
+                > :nth-child(1) {
+                    font-size: 18pt;
+                    color: antiquewhite;
+                }
+
+                > :nth-child(2) {
+                    margin-left: $list-margin;
+                }
+
+                &--other-basic {
+                    ul {
+                        list-style: none;
+                    }
+                }
+            }
+        }
+
+        &--projects {
+            .project__title {
+                font-size: 24pt;
+            }
+
+            .project__block {
+                margin-left: $list-margin;
+            }
+        }
+    }
+}

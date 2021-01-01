@@ -32,10 +32,13 @@
     "webpack-md5-hash": "0.0.6"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
     "@microsoft/signalr": "^5.0.1",
     "@types/animejs": "^3.1.2",
     "@types/node": "^14.14.12",
     "animejs": "^3.2.1",
-    "normalize.css": "^8.0.1"
+    "bezier-easing": "^2.1.0",
+    "normalize.css": "^8.0.1",
+    "scroll-behavior-polyfill": "^2.0.13"
   }
 }

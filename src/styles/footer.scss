@@ -1,0 +1,41 @@
+@mixin footer() {
+    height: 5vh;
+    margin-top: -5px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 1fr;
+    background: rgb(61,58,126);
+background: linear-gradient(180deg, rgba(61,58,126,1) 0%, rgba(0,155,255,1) 100%);
+    text-align: center;
+    
+    @media (min-width: 768px) {
+        margin-top: 0;
+        height: 6vh;
+    }
+
+    > div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        @media (min-width: 768px) {
+            justify-content: center;
+        }
+    }
+
+    > :nth-child(3) {
+        a {
+            cursor: pointer;
+        }
+        
+        i {
+            font-size: 18pt;
+
+            @media (min-width: 768px) {
+                font-size: 22pt;
+                margin-left: 10px;
+            }
+        }
+    }
+}
