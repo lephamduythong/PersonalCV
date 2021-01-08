@@ -1,3 +1,5 @@
+@import './globalvars';
+
 $list-margin: 25px;
 
 @mixin main() {
@@ -48,7 +50,7 @@ $list-margin: 25px;
             font-size: 32pt;
         }
 
-        &--about-title, &--hobbies-title {
+        &--about-title, &--hobbies-title, &--keywords-title {
             font-size: 24pt;
         }
 
@@ -57,6 +59,13 @@ $list-margin: 25px;
 
             i {
                 margin: 10px;
+            }
+        }
+
+        &--keywords {
+            
+            ul {
+                margin-left: 30px;
             }
         }
     }
@@ -96,7 +105,7 @@ $list-margin: 25px;
                 }
 
                 > :nth-child(2) {
-                    margin-left: $list-margin;
+                    margin: 5px 5px 0 $list-margin;
                 }
 
                 &--other-basic {
@@ -120,6 +129,17 @@ $list-margin: 25px;
                     color: antiquewhite;
                 }
             }
+        }
+
+        &--experiences {
+            .experiences__title {
+                font-size: 24pt;
+            }
+            
+            .experiences__block {
+                margin-left: 30px;
+                font-size:  14pt;
+            } 
         }
     }
 }
