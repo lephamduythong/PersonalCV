@@ -12,8 +12,8 @@
 </head>
 
 <body>
-  <div class="header">
-  </div>
+  <!-- <div class="header">
+  </div> -->
   <div class="main">
     <div class="main__side main__side--left">
       <div class="left-side__info left-side__info--name">Thong Le</div>
@@ -25,9 +25,8 @@
       <div class="left-side__info"><i class="fas fa-envelope-square"></i>&nbsp;lephamduythong2296@gmail.com</div>
       <div class="left-side__info left-side__info--about-title">About me:</div>
       <div class="left-side__info">
-        Hi, my name is Thong, I'm from Binh Duong province, Vietnam. I like programming very much when I was young. I
-        decided follow the web designer because It's very interesting.</div>
-      <div class="left-side__info left-side__info--keywords-title">My keywords:</div>
+        Hi, my name is Thong, I'm from Binh Duong province, Vietnam. I like programming very much when I was young. I always follow the Iceberg theory of Ernest Hemingway when trying to solve a problem.</div>
+      <!-- <div class="left-side__info left-side__info--keywords-title">My keywords:</div>
       <div class="left-side__info left-side__info--keywords">
         <ul>
           <li>Self-learning</li>
@@ -37,33 +36,35 @@
           <li>Jolly</li>
           <li>Gentle</li>
         </ul>
-      </div>
-      <div class="left-side__info left-side__info--hobbies-title">Hobbies:</div>
-      <div class="left-side__info left-side__info--hobbies"><i class="far fa-futbol"></i><i
-          class="fas fa-swimmer"></i><i class="fas fa-book"></i></div>
+      </div> -->
     </div>
     <div class="main__side main__side--right">
       <div class="right-side__block right-side__block--timeline">
         <div class="timeline__title">Timeline</div>
-        <div class="timeline__info">2002-2014: High school</div>
-        <div class="timeline__info">2014-2018: Tôn Đức Thắng University</div>
-        <div class="timeline__info">6/2017-2018: Intership at TMA Solutions</div>
-        <div class="timeline__info">7/2018-2/2019: Works at NashTech</div>
-        <div class="timeline__info">3/2019-3/2021: Military service</div>
+        <div class="timeline__info">2014-2018: Tôn Đức Thắng University - Bachelor of Computer Science</div>
+        <div class="timeline__info">
+          <p>7/2018-2/2019: Software Engineer at NashTech</p>
+          <p class="timeline__info--project">· Project MediaBrands: build and maintain tax management website using Javascript (Jquery), C#, SQL Server</p>
+        </div>
+        <div class="timeline__info">
+          <p>4/2021-1/2022: Software Engineer at NashTech</p>
+          <p class="timeline__info--project">· Project Tabcorp eBet/IGT: upgrade servers and install firmware for slot machines for Australian venues (Windows Server)</p>
+          <p class="timeline__info--project">· Project NHSP: build and maintain MyBank booking shifts website in UK using Angular, C# (.Net Core), SQL Server</p>
+        </div>
       </div>
       <div class="right-side__block right-side__block--skills">
         <div class="skill__title">Skills</div>
-        <div class="skill__block">
+        <!-- <div class="skill__block">
           <div>Skills rate:</div>
           <div>Beginner / Junior - 1 year experience</div>
-        </div>
+        </div> -->
         <div class="skill__block skill__block--frontend">
           <div>Frontend:</div>
           <div>HTML, CSS (SCSS), Javascript (Angular, React, Vue)</div>
         </div>
         <div class="skill__block skill__block--backend">
           <div>Backend:</div>
-          <div>C#, ASP.Net (Framework/Core), SignalR, SQL Server, Entity Framework (Core), WPF, MySQL</div>
+          <div>C#, ASP.Net (Framework/Core), SignalR, SQL Server, Entity Framework (Core)</div>
         </div>
         <div class="skill__block skill__block--devops">
           <div>Devops:</div>
@@ -72,14 +73,14 @@
         <div class="skill__block skill__block--other-basic">
           <div>Other basic skills:</div>
           <div>Laravel framework (PHP), Numpy (Python), Arduino and ESP8266 (C/C++), Firebase, Programing Hybrid Mobile
-            App with Cordova (Javascript)
+            App with Cordova (Javascript), MySQL, WPF, Windows Server
             </ul>
           </div>
         </div>
-        <div class="skill__block skill__block--knowledge">
+        <!-- <div class="skill__block skill__block--knowledge">
           <div>Knowledge</div>
           <div>Electrical Components, Digital Electronics, IoT</div>
-        </div>
+        </div> -->
       </div>
       <div class="right-side__block right-side__block--experiences">
         <div class="experiences__title">Working experiences:</div>
@@ -94,7 +95,10 @@
             Solved some hard modern web UI bugs without depending on library/framework
           </li>
           <li>
-            Wrote automation scripts to deploy to server
+            Wrote automation scripts to deploy to server using Linux
+          </li>
+          <li>
+            IT operational support 
           </li>
           <li>
             Freelanced for a short time
@@ -105,18 +109,19 @@
         <div class="project__title">Pet projects:</div>
         <div class="project__block">
           <div>Loto game: <a href="http://lotogame.surge.sh/">http://lotogame.surge.sh/</a></div>
+          <div>Turning on PC using ESP8266: <a href="https://bit.ly/3fjBC9v">https://bit.ly/3fjBC9v</a></div>
         </div>
       </div>
     </div>
   </div>
-  <div class="footer">
+  <!-- <div class="footer">
     <div></div>
     <div>Designed by Thong Le</div>
     <div>
       <a href="https://github.com/lephamduythong" target="_blank"><i class="fab fa-github"></i></a>
       <a href="#"><i class="fab fa-facebook"></i></a>
     </div>
-  </div>
+  </div> -->
   <script src="https://kit.fontawesome.com/d3a02a446b.js" crossorigin="anonymous"></script>
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>

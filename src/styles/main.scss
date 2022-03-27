@@ -3,6 +3,8 @@
 $list-margin: 25px;
 
 @mixin main() {
+    margin-top: 30px;
+    
     @media (min-width: 768px) {
         display: flex;
         justify-content: center;
@@ -17,7 +19,7 @@ $list-margin: 25px;
             @media (min-width: 768px) {
                 display: inline;
                 float: left;
-                width: 400px;
+                width: 350px;
                 height: 95vh;
             }   
         }
@@ -95,6 +97,10 @@ $list-margin: 25px;
             .timeline__info {
                 margin-left: $list-margin;
                 font-size: 14pt;
+
+                &--project {
+                    margin-left: 20px;
+                }
             }
         }
 
